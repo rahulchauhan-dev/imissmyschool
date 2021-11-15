@@ -1,0 +1,7 @@
+Classroom 
+Hallway
+Bell
+Playground
+Exam
+Talking
+Laugh

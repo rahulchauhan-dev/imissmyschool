@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="school.css">
+	<meta name="viewport" content="width=1024">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="index.js"></script>
+
+	<title>I Miss My School - Recreate Your Moments</title>
+
+</head>
+
+<body onload="pageload()">
+
+	<div class="containerBackground">
+		<div id="dvImage">
+
+		</div>
+		<h1 id="fhead">I Miss <br>My School</h1>
+		<p class="signature">Developed and Designed by <a href="https://twitter.com/Rahul_ion011" target="_blank"
+				rel="noopener noreferrer">Rahul</a></p>
+
+		<div id="spotify-container" class="fadeinleft">
+			<iframe class="spotify-player" src="https://open.spotify.com/embed/playlist/7FAAurb1pMgUGYUJrGV7ML"
+				width="100%" height="320" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+		</div>
+
+
+
+		<div class="allPlayerContainer">
+			<label>Classroom Ambience</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play1()" src="./icons/play_30.png" class="player-img" id="player-icon1">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 17px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider1" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Hallway Ambience</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play2()" src="./icons/play_30.png" class="player-img" id="player-icon2">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 85px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider2" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Laugh</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play3()" src="./icons/play_30.png" class="player-img" id="player-icon3">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 155px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider3" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Playground Ambience</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play4()" src="./icons/play_30.png" class="player-img" id="player-icon4">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 223px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider4" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Library Ambience</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play5()" src="./icons/play_30.png" class="player-img" id="player-icon5">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 292px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider5" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Exam Hall Ambience</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play6()" src="./icons/play_30.png" class="player-img" id="player-icon6">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 360px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider6" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Canteen Ambience</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play7()" src="./icons/play_30.png" class="player-img" id="player-icon7">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 430px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider7" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<label>Rain On Window</label>
+			<div class="audio-player-container">
+				<div class="play">
+					<img onclick="play8()" src="./icons/play_30.png" class="player-img" id="player-icon8">
+				</div>
+				<div style="display: flex; align-items: center; justify-content: left; width: 100%;position:absolute;
+    top: 499px;left: 5px;">
+					<div class="audio-player-volume" style="width: 100%;">
+						<div id="volume">
+						</div>
+						<div class="slide-container">
+							<input type="range" id="volume-slider" class="volume-slider8" max="100" value="70">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<audio loop="true" id="Talking" src="./Sounds/Talking.mp3"></audio>
+		<audio loop="true" id="Hallway" src="./Sounds/Hallway.mp3"></audio>
+		<audio loop="true" id="Laugh" src="./Sounds/Laugh.mp3"></audio>
+		<audio loop="true" id="Playground" src="./Sounds/Playground.mp3"></audio>
+		<audio loop="true" id="Library" src="./Sounds/Library.mp3"></audio>
+		<audio loop="true" id="ExamHall" src="./Sounds/ExamHall.mp3"></audio>
+		<audio loop="true" id="Canteen" src="./Sounds/Canteen.mp3"></audio>
+		<audio loop="true" id="Rain" src="./Sounds/Rain.mp3"></audio>
+
+
+
+
+
+</body>
+
+</html>
